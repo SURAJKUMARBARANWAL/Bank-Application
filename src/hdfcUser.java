@@ -41,9 +41,9 @@ public class hdfcUser implements Bank {
     public String withdrawMoney(double balance, String password) {
         if(Objects.equals(password,this.password)){
             //we can withdrawMoney
-            if(this.balance>balance){
+            if(this.balance>=balance){
                 this.balance-=balance;
-                return "Successfully withdraw";
+                return "Successfully withdraw your curr bal:"+this.balance;
             }
             return "Your bal is not sufficient";
         }
