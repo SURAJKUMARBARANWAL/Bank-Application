@@ -47,7 +47,7 @@ public class hdfcUser implements Bank {
             }
             return "Your bal is not sufficient";
         }
-        return "your passs is incorrect";
+        return "your password is incorrect";
     }
 
     @Override
